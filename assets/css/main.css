@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.hot {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('https://sieuimba.com/wp-content/uploads/2015/03/16.jpg') top center / cover no-repeat;
+}
+
+body.hot #weather {
+    background: url('https://sieuimba.com/wp-content/uploads/2015/03/16.jpg') top center / cover no-repeat;
+}
+
+body.cool {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('https://scr.vn/wp-content/uploads/2020/08/Hinh-mua-dong-suoi-am.jpg') top center / cover no-repeat;
+}
+
+body.cool #weather {
+    background: url('https://scr.vn/wp-content/uploads/2020/08/Hinh-mua-dong-suoi-am.jpg') top center / cover no-repeat;
+}
+
+#weather {
+    min-width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: green;
+}
+
+.input-search {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 0 15px 0 15px;
+    transition: 0.5s;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.input-search:focus {
+    border-radius: 15px 0 15px 0;
+    background-color: rgba(217, 210, 210, 0.8);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.time {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+    margin: 6px;
+}
+
+.temperature {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 65px;
+    color: #fff;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    margin: 20px 0 30px;
+    padding: 20px;
+    width: 240px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+.short-desc {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600
+}
+
+.more-desc {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 40px
+}
+
+.more-desc span {
+    display: block;
+    margin-top: 15px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
